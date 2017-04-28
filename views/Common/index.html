@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>免费测试虚拟机</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div></div>
+    <div>
+        <form method='post'>
+			时间
+            <select>
+				<%times.forEach(function(value){%>
+				<option value='<%= value.value%>'><%= value.title%></option>
+				<%})%>
+			</select>
+			系统类型
+           <select>
+				<%systems.forEach(function(value){%>
+				<option value='<%= value%>'><%= value%></option>
+				<%})%>
+			</select>
+			<input type="submit" value="申请" />
+        </form>
+    </div>
+    <div></div>
+</body>
+
+</html>

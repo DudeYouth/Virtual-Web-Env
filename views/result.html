@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>免费测试虚拟机</title>
+    <meta charset="utf-8" />
+	<% include ./Common/head.html %>
+</head>
+
+<body>
+	<% include ./Common/nav.html %>
+	<% include ./Common/header.html %>
+    <div class="col-sm-8 col-sm-offset-2" style="margin-top:3rem;">
+		<div class='col-sm-4 col-sm-offset-1'>
+			<% include ./Common/tip.html %>	
+		</div>
+		<div class="col-sm-7 " style="font-size:1.6rem;">
+			<div id="message">
+				<p class="title-tip">温馨提示：注意账号信息保存，系统暂不提供用户数据查询功能！</p>
+				<div class='row list-line-height'>
+					<strong class="col-sm-3">ip地址：</strong>
+					<span class="col-sm-5"><%=all.ip%></span>
+				</div>
+				<div class='row list-line-height'>
+					<strong class="col-sm-3">ssh端口：</strong>
+					<span class="col-sm-5"><%=all.ports[22]%></span>
+				</div>	
+				<div class='row list-line-height'>
+					<strong class="col-sm-3">用户名：</strong>
+					<span class="col-sm-5"><%=all.username%></span>
+				</div>
+				<div class='row list-line-height'>
+					<strong class="col-sm-3">密码：</strong>
+					<span class="col-sm-5"><%=all.passwd%></span>
+				</div>
+				<p class="title-tip">端口映射关系(虚拟机端口=>主机端口)</p>
+				<ul class="list-unstyled" style="padding-left:1rem">
+					<% var keys = Object.keys(all.ports);%>
+					<% keys.forEach(function(value){%>
+						<li class="row" style="padding:5px 0">
+							<span class='col-sm-2'><%=value%></span>
+							<span class='col-sm-1'>=> </span>
+							<span class='col-sm-4'><%=all.ports[value]%></span>
+						</li>
+					<%})%>
+				</ul>
+				<!--<button type="submit" class="btn btn-primary btn-lg">保存账号信息</button>  -->
+			</div>
+		</div>
+    </div>
+    <div></div>
+	
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>免费测试虚拟机</title>
+    <meta charset="utf-8" />
+	<% include ./Common/head.html %>
+</head>
+
+<body>
+	<% include ./Common/nav.html %>
+	<% include ./Common/header.html %>
+    <div class='col-sm-8 col-sm-offset-2' style="margin-top:3rem;">
+		<div class='col-sm-4 col-sm-offset-1'>
+			<% include ./Common/tip.html %>	
+		</div>
+		<div class='col-sm-7'>
+		<form class="form-horizontal col-sm-8" method='post' action='http://123.56.220.42:3000/result'>
+		  <div class="form-group">
+			<label for="exampleInputFile">环境类型</label>
+		   <select name='systemType' class="form-control">
+				<%systems.forEach(function(value){%>
+				<option value='<%= value%>'><%= value%></option>
+				<%})%>
+			</select>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleInputPassword1">有效期</label>
+			<select name='day' class="form-control">
+				<%times.forEach(function(value){%>
+				<option value='<%= value.value%>'><%= value.title%></option>
+				<%})%>
+			</select>
+		  </div>
+		  <div class="form-group">
+			<button type="submit" class="btn btn-primary">申请</button>
+		  </div>
+		</form>
+		</div>
+	</div>
+
+    <div></div>
+</body>
+
+</html>

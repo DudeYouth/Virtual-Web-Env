@@ -1,0 +1,15 @@
+body{
+	color:#555;
+}
+.list-line-height{
+	line-height:3rem;
+}
+.error-container{
+	margin-top:15rem;
+	text-align:center;
+}
+.title-tip{
+	border-left:3px solid #2188b6;
+	margin:0.5rem 0.1rem;
+	text-indent:1rem;
+}

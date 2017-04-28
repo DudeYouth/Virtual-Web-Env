@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>免费测试虚拟机</title>
+    <meta charset="utf-8" />
+	<% include ./Common/head.html %>
+</head>
+
+<body>
+	<% include ./Common/nav.html %>
+    <div class='col-sm-8 col-sm-offset-2 error-container'>
+		<div><img src='images/error.gif' /></div>
+		<h1 style="list-line-height"><%=content %></h1>
+		<h4 class="list-line-height"><span id='num'><%=time %></span>秒后&nbsp;<a href="<%=url %>">跳转</a></h4>
+	</div>
+
+    <div></div>
+	<script>
+		var num = <%=time %>;
+		var timer = setInterval(function(){
+			if(num<=1){
+				clearInterval(timer);
+				timer = null;
+				window.location.href = '<%=url %>';
+			}
+			num--;
+			document.getElementById('num').innerText = num ;
+		},1000);
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                        PORTS               NAMES
+ffb40a53b15a        ubuntu-nginx        "/bin/bash"         15 minutes ago      Exited (0) 8 minutes ago                          NSvnQmns
+7ff6215e2d16        ubuntu-nginx        "/bin/bash"         26 minutes ago      Exited (130) 17 minutes ago                       YiR3gC78
+f7c625891ef3        ubuntu-nginx        "/bin/bash"         26 minutes ago      Created                                           Fvmj3AMT
+8d734b83f9b6        ubuntu-nginx        "/bin/bash"         27 minutes ago      Created                                           BAO1ihAg
+
+> application-name@0.0.1 start /home/create_docker
+> nodejs ./bin/www "./bin/www"
+
+[90mGET / [32m200 [90m22ms - 737b[0m
+[90mGET / [36m304 [90m6ms[0m
+
+[90mPOST / [32m200 [90m384ms - 579b[0m
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                                                                                                                                                                                            NAMES
+dfc98751d7d0        ubuntu-nginx        "/bin/bash"         5 seconds ago       Up 5 seconds        0.0.0.0:30021->21/tcp, 0.0.0.0:30022->22/tcp, 0.0.0.0:30023->23/tcp, 0.0.0.0:30080->80/tcp, 0.0.0.0:33000->3000/tcp, 0.0.0.0:33306->3306/tcp, 0.0.0.0:38080->8080/tcp, 0.0.0.0:38888->8888/tcp   wKri1bNo
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                                                                                                                                                                                            NAMES
+dfc98751d7d0        ubuntu-nginx        "/bin/bash"         10 seconds ago      Up 10 seconds       0.0.0.0:30021->21/tcp, 0.0.0.0:30022->22/tcp, 0.0.0.0:30023->23/tcp, 0.0.0.0:30080->80/tcp, 0.0.0.0:33000->3000/tcp, 0.0.0.0:33306->3306/tcp, 0.0.0.0:38080->8080/tcp, 0.0.0.0:38888->8888/tcp   wKri1bNo
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                        PORTS                                                                                                                                                                                            NAMES
+dfc98751d7d0        ubuntu-nginx        "/bin/bash"         14 seconds ago      Up 13 seconds                 0.0.0.0:30021->21/tcp, 0.0.0.0:30022->22/tcp, 0.0.0.0:30023->23/tcp, 0.0.0.0:30080->80/tcp, 0.0.0.0:33000->3000/tcp, 0.0.0.0:33306->3306/tcp, 0.0.0.0:38080->8080/tcp, 0.0.0.0:38888->8888/tcp   wKri1bNo
+ffb40a53b15a        ubuntu-nginx        "/bin/bash"         16 minutes ago      Exited (0) 9 minutes ago                                                                                                                                                                                                       NSvnQmns
+7ff6215e2d16        ubuntu-nginx        "/bin/bash"         27 minutes ago      Exited (130) 17 minutes ago                                                                                                                                                                                                    YiR3gC78
+f7c625891ef3        ubuntu-nginx        "/bin/bash"         27 minutes ago      Created                                                                                                                                                                                                                        Fvmj3AMT
+8d734b83f9b6        ubuntu-nginx        "/bin/bash"         28 minutes ago      Created                                                                                                                                                                                                                        BAO1ihAg
